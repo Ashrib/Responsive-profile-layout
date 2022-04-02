@@ -1,0 +1,666 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.hidetop{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    background: -webkit-gradient(linear, left top, 
+    left bottom, from(rgb(146, 146, 146)), to(rgb(114, 113, 113)));
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 800;
+    display: none;
+}
+.hidemain{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    background: -webkit-gradient(linear, left top, 
+    left bottom, from(rgb(146, 146, 146)), to(rgb(114, 113, 113)));
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 800;
+    width: 100%;
+    display: none;
+    margin-top: 30px;
+}
+label{
+    display: none;
+}
+#show{
+    display: none;
+}
+
+ 
+
+                                /* Navigation bar */
+#nav{
+    display:flex;
+    
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px black;
+    height: calc(10vh);
+    width: auto;
+    background-color: gray;
+    border: 1px solid black;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+#nav ul{
+    list-style: none;
+    display: inline-flex;
+    color: white;
+    margin-left: 10px;
+}
+#nav ul li{
+    border: none;
+    
+}
+#logo{
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home{
+    padding: 10px;
+    margin: 5px;
+}
+.home:hover{
+    background-color: rgb(71, 69, 69);
+    padding: 15px;
+    margin: 10px;
+}
+.othertools{
+    padding: 10px;
+    margin: 10px;
+}
+.othertools:hover{
+    background-color: rgb(71, 69, 69);
+    padding: 20px;
+    margin: 10px;
+}
+#nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#list{
+    display: flex;
+}
+#account{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 50%;
+    margin: 15px 20px 15px 0px;
+    display: flex;
+    float: right;
+    border-radius: 100%;
+    background-image: url(https://media.istockphoto.com/vectors/handsome-young-man-wearing-sunglasses-vector-id812960808?k=20&m=812960808&s=612x612&w=0&h=TZXNtv-wpXjyvELYRtr-SLPEDOs_jMq9ZMd9mv82NGg=);
+    cursor: pointer;
+    
+}
+#account:hover{
+    padding: 10px;
+}
+                                    /* Navigation bar end*/
+#container{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+
+                                /* leftside */
+#leftside{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    height:auto;
+}
+#profile{
+    
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    height:300px;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+}
+#profilehead{
+    padding: 15px 0px 0px 110px;
+    height: auto;
+    background-color: rgb(155, 75, 230);
+}
+#profilehead span{
+    font-size: 1.3em;
+    color: white;
+}
+.mypic img{
+    margin-top: 20px;
+    border-radius: 100%;
+    width:80px;
+    height: 80px;
+    cursor: pointer;
+}
+#about{
+    margin-top: 20px;
+    display: flex;
+}
+#about table tr td span{
+    font-size: 0.9em;
+}
+#about table tr td{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#info{
+    margin-top: 20px;
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    height:150px;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+    background: rgb(92, 100, 107);
+}
+#info table tr td{
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+}
+#info table tr td span{
+    font-size: 0.9em;
+}
+#interests{
+    margin-top: 20px;
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    height:150px;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+    color: white;
+}
+#interests table tr .int{
+    color: rgb(92, 100, 107);
+    font-size: 1em !important;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: transparent;
+}
+#interests table tr td{
+    padding: 1px 3px 1px 3px ;
+    border-radius: 2px;
+    font-size: 0.9em;
+    text-align: center;
+}
+.c1{
+    background-color: rgb(75, 74, 74);
+}
+.c2{
+    background-color: rgb(94, 92, 92);
+}
+.c3{
+    background-color: rgb(104, 102, 102);
+}
+.c4{
+    background-color: rgb(105, 102, 102);
+}
+.c5{
+    background-color: rgb(124, 123, 123);
+}
+.c6{
+    background-color: rgb(129, 127, 127);
+}
+.c7{
+    background-color: rgb(151, 149, 149);
+}
+.c8{
+    background-color: rgb(161, 160, 160);
+}
+.c9{
+    background-color: rgb(175, 174, 174);
+}
+.c10{
+    background-color: rgb(201, 199, 199);
+}
+.c11{
+    background-color: rgb(204, 202, 202);
+}
+#hey{
+    padding-top: 25px;
+    margin-top: 20px;
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    height:120px;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+    color: rgb(92, 100, 107);
+    background-color: rgb(206, 206, 206);
+}
+#hey span{
+    margin: 25px 0px 0px 20px;
+    font-weight: 700;
+}
+#hey p{
+    margin: 25px 0px 0px 20px;
+}
+                                    /* leftside end */
+
+                                    /* Center */
+#main{
+    flex-basis: 47%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    height: auto;
+    width: 700px;
+}
+#status{
+    height: 150px;
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+}
+#status p{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: rgb(15, 116, 248);
+}
+#status input{
+    width: 530px;
+    padding: 7px 0px 7px 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#status input:hover{
+    background-color: rgb(192, 232, 243);
+}
+#status input:focus{
+    font-weight: 700;
+}
+#post{
+    margin-top: 25px;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 70px;
+    background-color: rgb(92, 100, 107);
+     cursor: pointer;
+}
+#post:hover{
+    background-color: rgb(184, 184, 184);
+    color: rgb(92, 100, 107);
+    border: 1px solid rgb(92, 100, 107);
+}
+#post1{
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    margin-top: 20px;
+    padding-bottom: 10px;
+    height:auto;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+}
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 20px 0px 0px 20px;
+    display: inline-flex;
+    border-radius: 100%;
+    background-image: url(https://media.istockphoto.com/vectors/portrait-of-a-businessman-avatar-of-a-young-man-for-social-network-vector-id1193146236?k=20&m=1193146236&s=612x612&w=0&h=mnlhkc2-uywZn0ZADASOGSjEhXGAMsTWmh__4pUNBqM=);
+    cursor: pointer;
+}
+.name{
+    font-weight: 600;
+}
+.min{
+    color: gray;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+hr{
+    margin-top: 40px;
+}
+p{
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#post1 img{
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+.likeandcomment{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.like{
+    border: none;
+    color: white;
+    background-color: rgb(14, 75, 241);
+     cursor: pointer;
+     padding: 5px 10px 5px 10px;
+}
+.comment{
+    border: none;
+    color: white;
+    background-color: rgb(14, 75, 241);
+     cursor: pointer;
+     padding: 5px 10px 5px 10px;
+}
+.like:hover{
+    background-color: rgb(0, 53, 197);
+    color: white;
+    border: 1px solid rgb(0, 53, 197);;
+}
+.comment:hover{
+    background-color: rgb(0, 53, 197);;
+    color: white;
+    border: 1px solid rgb(0, 53, 197);;
+}
+#post2{
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    margin-top: 20px;
+    padding-bottom: 10px;
+    height:auto;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+}
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 20px 0px 0px 20px;
+    display: inline-flex;
+    border-radius: 100%;
+    background-image: url(https://media.istockphoto.com/vectors/portrait-of-a-businessman-avatar-of-a-young-man-for-social-network-vector-id1193146236?k=20&m=1193146236&s=612x612&w=0&h=mnlhkc2-uywZn0ZADASOGSjEhXGAMsTWmh__4pUNBqM=);
+    cursor: pointer;
+}
+#post3{
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    margin-top: 20px;
+    padding-bottom: 10px;
+    height:auto;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+}
+#post3 img{
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+
+                                    /* Center end */
+
+                                    /* rightside  */
+
+#rightside{
+    flex-basis: 20%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    width:500px;
+    height:auto;
+}
+#events{
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    height:300px;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+}
+#events h5{
+    padding-top: 10px;
+    text-align: center;
+}
+#events img{
+    padding: 20px 0px 10px 30px;
+}
+#holiday{
+    font-weight: 700;
+    margin-left: 90px;
+}
+#events p{
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+#events button{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgb(196, 194, 194);
+    border: none;
+    cursor: pointer;
+}
+#events button:hover{
+    background-color: gray;
+    color: white;
+}
+#request{
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    height:250px;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+    margin-top: 20px;
+}
+#request p{
+    text-align: center;
+    margin-top: 10px;
+}
+#friendpic{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 40%;
+    margin: 20px 0px 0px 70px;
+    display: flex;
+    border-radius: 100%;
+    background-image: url(https://media.istockphoto.com/vectors/portrait-of-a-businessman-avatar-of-a-young-man-for-social-network-vector-id1193146236?k=20&m=1193146236&s=612x612&w=0&h=mnlhkc2-uywZn0ZADASOGSjEhXGAMsTWmh__4pUNBqM=);
+    cursor: pointer;
+    
+}
+#buttons{
+    margin-top: 20px;
+    text-align: center;
+}
+#ok{
+    color: white;
+    height: 40px;
+    background-color: rgb(110, 197, 110);
+    width: 40%;
+    border: none;
+    cursor: pointer;
+}
+#ok:hover{
+    background-color: rgb(14, 248, 14);
+    font-size: 1.2em;
+}
+#no{
+    color: white;
+    height: 40px;
+    background-color: rgb(243, 98, 98);
+    width: 40%;
+    border: none;
+    cursor: pointer;
+}
+#no:hover{
+    background-color: rgb(255, 0, 0);
+    font-size: 1.2em;
+}
+#ads{
+    border-left: 2px solid rgb(230, 98, 98);
+    border-right: 2px solid rgb(220, 243, 16);
+    border-top: 2px solid rgb(18, 127, 252);
+    border-bottom: 2px solid rgb(65, 252, 18);
+    height:70px;
+    box-shadow: 0px 5px 3px rgb(180, 179, 179);
+    margin-top: 20px;
+}
+#ads p{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+                                        /* rightside end */
+
+@media screen and (max-width: 600px){
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    #nav{
+        position: fixed;
+        width: calc(13vw);
+        left: 0%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, 
+    left bottom, from(rgb(146, 146, 146)), to(rgb(95, 95, 95)));
+        display: block;
+        flex-direction: column;
+        box-shadow: 0px 2px 10px black;
+        border: none;
+    }
+    #nav ul{
+        display: block;
+    }
+    #logo{
+        display: none;
+    }
+    #account{
+        width: calc(8vw);
+        height: calc(6vh);
+        display: inline-block;
+        bottom: 0%;
+        margin-left: 15px;
+        position: absolute;
+    }
+    #account:hover{
+        padding: 5px;
+    }
+    #container{
+        display: block;
+        margin-left: 50px;
+        height: 2000px;
+        width: auto;
+    }
+    #leftside{
+        width: calc(50vw);
+        height: auto;
+        top: inherit;
+        display:block;
+        margin-left: 70px;
+    }
+    #profilehead{
+        padding: 15px 0px 0px 80px;
+    }
+    .int{
+        font-size: inherit;
+    }
+    #interests table tr td{
+        padding: 1px 3px 2px 3px ;
+        font-size: 0.6em;
+    }
+    #status input{
+        width: 300px;
+    }
+    #post1 img{
+        height:50%;
+        width: 44%;
+    }
+    #main{
+        display:block ;
+        margin-left: 20px;
+        margin-top: 20px;
+        position: sticky;
+        height: auto;
+        width: calc(70vw); 
+    }
+    #rightside{
+        display: block;
+        margin-left: 70px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        width:calc(50vw);
+        height:auto;
+    }
+    #events img{
+        padding-left: 45px;
+    }
+    #events button{
+        margin-left: 35px;
+    }
+    #holiday{
+        padding-left: 25px;
+    }
+    #friendpic{
+        width: 30%;
+        height: 30%;
+        margin-left: 100px;
+    }
+    .hidetop{
+        display: inline-block;
+        width: 100%;
+        height: calc(10vh);
+    }
+    .hidemain{
+        display: inline-block;
+        
+        height: calc(10vh);
+    }
+    .hidetop span a{
+        text-decoration: none;
+        color: white;
+    }
+    label{
+        cursor: pointer;
+        font-size: 1.4em;
+        font-weight: 800;
+        color: white;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #list{
+        display: none;
+    }
+    #show:checked+#list{
+        display: block;
+    }
+    
+}
